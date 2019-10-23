@@ -15,6 +15,8 @@ async def test_aio_get_ticker():
     # TODO: test all the pairs
     # Somehow if multiple request were running (serial and parallel), 
     # it always return with some TimeoutError 
+    # 
+    # Parallel code that is tested:
     # assert await asyncio.gather(*[public.aio_get_ticker(pair) for pair in list(Pair)], loop=event_loop)
 
 @pytest.mark.asyncio
