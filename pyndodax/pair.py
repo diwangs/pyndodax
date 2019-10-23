@@ -25,7 +25,7 @@ class Pair(Enum):
     ETC = "etc_idr"
     GARD = "gard_idr"
     GSC = "gsc_idr"
-    GXS = "gxs_idr" # Timeout
+    GXS = "gxs_idr"
     HPB = "hpb_idr"
     IGNIS = "ignis_idr"
     INX = "inx_idr"
@@ -33,14 +33,14 @@ class Pair(Enum):
     LTC = "ltc_idr"
     MBL = "mbl_idr"
     NEO = "neo_idr"
-    NPXS = "npxs_idr" # Timeout
+    NPXS = "npxs_idr"
     NXT = "nxt_idr"
     ONT = "ont_idr"
     PXG = "pxg_idr"
     QTUM = "qtum_idr"
     RVN = "rvn_idr"
     SSP = "ssp_idr"
-    SUMO = "sumo_idr" # Timeout
+    SUMO = "sumo_idr"
     TRX = "trx_idr"
     USDC = "usdc_idr"
     USDT = "usdt_idr"
