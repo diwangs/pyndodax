@@ -1,11 +1,14 @@
 language: python
 python:
-  - "3.7"
-  - "3.8"
-# command to install dependencies
+- '3.7'
+- '3.8'
 install:
-  - python setup.py install
-  - pip install -e .[dev]
-# command to run tests
+- python setup.py install
+- pip install -e .[dev]
 script:
-  - py.test pyndodax
+- py.test pyndodax
+deploy:
+  provider: pypi
+  user: __token__
+  password:
+    secure: AjSQ9m5beI/MpNOzOMt8STjWC5QjA+zOS3q29E6sxkN1wzfFVog9Dn3G7vAP6sdwPfwwohp2kmAoPrv+bwJDPl3czO+LX+CTO4U7KO2rHIB4Se2ozvf1Rdktx3cJ/20lkpR91+vHHzpVxzQkWIlKXYXNxvFXCU6ThKJ8W3MiYRTKHzRmdokHCvw3UJT0KtGivK3vnS7uv+urB/o02fUFF8RQULC7koMsklaE42OPKhSMxOPnWnr3LXcIUKDHksmMN30z55hi5DaRj27pRsDp2UNc+NLt7KSrdJURyNp2EAltu3eXDdgcVyKDhxzVALXPDtFrnmKket/XBtWwFxYXKMOvAWm3ct0u3JiOl3TQ0kpGBzXXmywV2GMyKbaE4Q60sdPcnQbJ3cxZV+t1RZxa51wPlLDQmYkIddM19oztioPK1bjctqBKq7et8SqrHHgWd/ct9yAsfZu0C7SY+243D7e4rpUSwLskyngfMf/hsxTcsfF9e0CMIokAVwYBirSMDm5DfUaWw4nuAhdg5szWy0KNNQYYKNr3MPN0PqZ/ZMfMPHmoMqDdUAkgrr6KiGvukClYMWaEcSICkjmvZQoKHPDbXKLy4MbHne1CYjcy8YJbzjoSjpX+x1otrlJH7DfJkNtva4TZw8XZHxtQHtGyl99Hs/K3Ztjz8geC4K3ilM8=
