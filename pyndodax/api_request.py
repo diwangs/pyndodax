@@ -8,7 +8,7 @@ async def aio_api_request(url, api_key=None, params=None, signature=None):
             response = await session.post(url, headers={
                 "Key": api_key,
                 "Sign": signature
-            }, data=params)
+            }, data=params, raise_for_status=True)
         else: # GET, for public API
             response = await session.get(url, raise_for_status=True)
     response = await response.json()
