@@ -1,6 +1,6 @@
 import pytest
 
-import api_request
+from pyndodax import api_request
 import asyncio
 
 @pytest.mark.asyncio

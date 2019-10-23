@@ -6,7 +6,7 @@ install:
 - python setup.py install
 - pip install -e .[dev]
 script:
-- py.test pyndodax
+- python -m pytest pyndodax
 deploy:
   provider: pypi
   user: __token__
